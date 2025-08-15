@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Snake — Letter Quest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <h1>Snake — Letter Quest</h1>
+    <div id="gameArea">
+      <canvas id="gameCanvas" width="480" height="480"></canvas>
+      <div id="hud">
+        <div id="target">Next: <span id="nextLetter"></span></div>
+        <div id="score">Length: <span id="len">1</span></div>
+      </div>
+      <div id="controls" class="hidden">
+        <button id="up">↑</button><br>
+        <button id="left">←</button>
+        <button id="down">↓</button>
+        <button id="right">→</button>
+      </div>
+    </div>
+    <p class="small">Use Arrow keys or WASD. Tap arrows on mobile.</p>
+    <div id="overlay" class="hidden"><div id="overlayText"></div><button id="restart">Play Again</button></div>
+  </div>
+<script src="game.js"></script>
+</body>
+</html>
